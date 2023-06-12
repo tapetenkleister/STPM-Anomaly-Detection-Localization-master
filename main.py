@@ -208,12 +208,3 @@ if __name__ == '__main__':
         stpm.test()
     else:
         print('Phase argument must be train or test.')
-
-
-
-
-
-
-
-    
-

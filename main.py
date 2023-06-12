@@ -171,8 +171,8 @@ class STPM():
 def get_args():
     parser = argparse.ArgumentParser(description='STPM anomaly detection')
     parser.add_argument('--phase', default='train')
-    parser.add_argument("--data_path", type=str, default="D:/dataset/mvtec_anomaly_detection")
-    parser.add_argument('--obj', type=str, default='zipper')
+    parser.add_argument("--data_path", type=str, default="datasets")
+    parser.add_argument('--obj', type=str, default='toothbrush')
     parser.add_argument('--img_resize', type=int, default=256)
     parser.add_argument('--img_cropsize', type=int, default=224)
     parser.add_argument('--validation_ratio', type=float, default=0.2)
@@ -187,8 +187,8 @@ def get_args():
 
 if __name__ == '__main__':
     
-    print ('Available devices ', torch.cuda.device_count())
-    print ('Current cuda device ', torch.cuda.current_device())
+    #print ('Available devices ', torch.cuda.device_count())
+    #print ('Current cuda device ', torch.cuda.current_device())
 
     args = get_args()
 

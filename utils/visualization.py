@@ -98,7 +98,7 @@ def plt_fig(test_img, scores, img_scores, gts, threshold, cls_threshold, save_di
                 transform=ax.transAxes,
                 fontdict=dict(
                     fontsize=8,
-                    color='r',
+                    color=('r' if cls_result == 'nok' else 'g'),
                     family='sans-serif',
                 ))
         ax.text(0.05,
